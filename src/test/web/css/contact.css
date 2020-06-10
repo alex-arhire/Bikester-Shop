@@ -1,0 +1,44 @@
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5% 20%;
+  color: whitesmoke;
+  background: url(./../img/AlanStockPhotography-cycling-forest-godrays-sun-rays-mountain-biking-wales.jpg);
+}
+
+.contact-form {
+  display: grid;
+  background-color: #252525;
+  padding: 10% 0;
+}
+.contact-form input {
+  width: 60%;
+  height: 40px;
+  /*border-radius: 5px;*/
+}
+.contact-form textarea {
+  width: 60%;
+  height: 100px;
+  /*border-radius: 5px;*/
+}
+.contact-form input, .contact-form label, .contact-form textarea, .contact-form button {
+  margin: 10px 15%;
+}
+
+.contact-info {
+  display: grid;
+  background-color: #252525;
+  align-items: center;
+  padding: 10% 2%;
+}
+
+.newsletter input {
+  width: 50%;
+  height: 40px;
+  /*border-radius: 5px;*/
+}
+.newsletter button {
+  margin: 0;
+}
+
+/*# sourceMappingURL=contact.css.map */

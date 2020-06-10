@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans Semibold", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul li, a {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 18px;
+}
+
+/*Mixins*/
+/*Slide-in buttons*/
+/*Product style*/
+.prod-name {
+  color: black;
+}
+
+.prod-price {
+  color: #fc5500;
+}
+
+#to-shop {
+  background-color: black;
+  color: whitesmoke;
+}
+
+/*# sourceMappingURL=commonStyle.css.map */
