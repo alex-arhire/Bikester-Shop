@@ -1,7 +1,10 @@
+@import "defaultValues";
+
 .bikes-container {
     display: grid;
     grid-template-rows: 10% 80% 10%;
     grid-template-columns: 20% 80%;
+
 }
 
 .display-options {
@@ -49,6 +52,24 @@ h2 {
 }
 
 .pagination {
+    grid-row: 3;
     grid-column: 2;
     border-top: solid #fc5500;
+    padding: 3% 0;
+
+    a {
+        transition: background-color .3s ease;
+        color: $buttonBGBlack;
+        padding: 10px;
+
+        &:hover {
+            background-color: $primaryOrange;
+        }
+    }
+
+    .prev, .next {
+        background-color: $bgGrey;
+        color: $textColorWS;
+    }
+
 }

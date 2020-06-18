@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans Semibold", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul li, a {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 18px;
+}
+
 .bikes-container {
   display: grid;
   grid-template-rows: 10% 80% 10%;
@@ -45,8 +58,22 @@ h2 {
 }
 
 .pagination {
+  grid-row: 3;
   grid-column: 2;
   border-top: solid #fc5500;
+  padding: 3% 0;
+}
+.pagination a {
+  transition: background-color 0.3s ease;
+  color: black;
+  padding: 10px;
+}
+.pagination a:hover {
+  background-color: #fc5500;
+}
+.pagination .prev, .pagination .next {
+  background-color: #252525;
+  color: whitesmoke;
 }
 
 /*# sourceMappingURL=bikes.css.map */

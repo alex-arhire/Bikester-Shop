@@ -33,6 +33,18 @@ ul li, a {
   grid-template-rows: repeat(3, auto);
   text-align: center;
 }
+.wishlist-container button {
+  background-color: black;
+  color: whitesmoke;
+  border: none;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.wishlist-container button:hover {
+  background-color: #fc5500;
+}
 .wishlist-container h1 {
   margin-top: 2%;
   color: #fc5500;

@@ -6,6 +6,10 @@
   grid-template-rows: repeat(3, auto);
   text-align: center;
 
+  button {
+    @include buttonStyle($buttonBGBlack, $textColorWS);
+  }
+
   h1 {
     margin-top: 2%;
     color: $primaryOrange;

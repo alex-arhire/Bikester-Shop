@@ -7,6 +7,9 @@
   margin: 4% 10%;
   grid-gap: 10px;
 
+  button {
+    @include buttonStyle($buttonBGBlack, $textColorWS);
+  }
 
   .shop-cart {
     grid-row: 1;

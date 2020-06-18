@@ -34,6 +34,18 @@ ul li, a {
   margin: 4% 10%;
   grid-gap: 10px;
 }
+.main-container button {
+  background-color: black;
+  color: whitesmoke;
+  border: none;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.main-container button:hover {
+  background-color: #fc5500;
+}
 .main-container .shop-cart {
   grid-row: 1;
   grid-column: 1/3;

@@ -115,9 +115,3 @@
         height: 15%;
     }
 }
-
-
-button {
-    @include buttonStyle($buttonBGBlack, $textColorWS);
-    //margin-top: 10px;
-}

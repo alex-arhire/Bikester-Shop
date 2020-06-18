@@ -22,57 +22,59 @@
 
 /*Slide-in buttons*/
 
-@mixin  buttonSlide($bgColor){
-    position: relative;
-    button:hover {
-      background-color: $primaryOrange;
-    }
+@mixin buttonSlide($bgColor) {
+  display: grid;
+  justify-items: center;
+  position: relative;
+  button:hover {
+    background-color: $primaryOrange;
+  }
 
-    .cart,
-    .wishlist {
-      animation: .5s ease;
-      width: 120px;
-      height: 40px;
-      color: white;
-      border: none;
-      background-color: $bgColor;
-      opacity: 0;
-      position: absolute;
-      font-size: 14px;
-    }
+  .cart,
+  .wishlist {
+    animation: .5s ease;
+    width: 120px;
+    height: 40px;
+    color: white;
+    border: none;
+    background-color: $bgColor;
+    opacity: 0;
+    position: absolute;
+    font-size: 14px;
+  }
 
-    @keyframes slide-left {
-      from {
-        transform: translateX(-100%);
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
+  @keyframes slide-left {
+    from {
+      transform: translateX(-100%);
     }
-
-    &:hover .cart {
-      animation-name: slide-left;
-      animation-fill-mode: forwards;
-      top: 15%;
-    }
-
-    @keyframes slide-right {
-      from {
-        transform: translateX(100%);
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-
-    &:hover .wishlist {
-      animation-name: slide-right;
-      animation-fill-mode: forwards;
-      top: 35%;
+    to {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
+
+  &:hover .cart {
+    animation-name: slide-left;
+    animation-fill-mode: forwards;
+    top: 15%;
+  }
+
+  @keyframes slide-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  &:hover .wishlist {
+    animation-name: slide-right;
+    animation-fill-mode: forwards;
+    top: 35%;
+  }
+}
 
 /*Product style*/
 .prod-name {
