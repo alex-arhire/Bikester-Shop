@@ -1,24 +1,51 @@
-function removeItems() {
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ready)
+} else {
+    ready();
+}
+
+function ready() {
     var removeItemsButtons = document.getElementsByClassName('prod-remove');
-    for (var i = 0; i < removeItemsButtons.length; i++) {
+    for (let i = 0; i < removeItemsButtons.length; i++) {
         var button = removeItemsButtons[i];
-        button.addEventListener("click", function (event) {
-            var buttonClicked = event.target;
-            buttonClicked.parentElement.remove();
-            updateTotal();
-        });
+        button.addEventListener("click", removeCartItem);
     }
+
+    var qtyInputs = document.getElementsByClassName('quantity');
+    for (let i = 0; i < qtyInputs.length; i++) {
+        var input = qtyInputs[i];
+        input.addEventListener('change', qtyChanged);
+    }
+
+}
+
+function removeCartItem(event) {
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.remove();
+    updateTotal();
+}
+
+function qtyChanged(event) {
+    var input = event.target;
+    if (isNaN(input.value) || input.value <= 0) {
+        input.value = 1;
+    }
+    updateTotal();
 }
 
 function updateTotal() {
     var cartItem = document.getElementsByClassName('cart-item');
+    var total = 0;
     for (var i = 0; i < cartItem.length; i++) {
         var cartData = cartItem[i];
-        var price = parseFloat(cartData.getElementsByClassName('price')[0].innerText.replace('$', ''));
-        var quantity = cartData.getElementsByClassName('prod-qty')[0].innerText;
-        console.log(price, quantity);
+        var price = parseFloat(cartData.getElementsByClassName('prod-price')[0].innerText.replace('$', ''));
+        var quantity = cartData.getElementsByClassName('quantity')[0].valueAsNumber;
+        console.log(price * quantity);
+        total += (price * quantity);
     }
+    document.getElementsByClassName('total-price')[0].innerText = '$' + total;
 }
+
 
 const products = document.querySelector('.wishlist-table > tbody');
 
@@ -30,7 +57,7 @@ function loadProducts() {
             const json = JSON.parse(request.responseText);
             // clearProducts();
             populateProducts(json);
-            removeItems();
+            ready();
         } catch (e) {
             console.log("Could not load products");
         }

@@ -1,8 +1,10 @@
+
+
 const products = document.querySelector('.products-template');
 
 function loadProducts() {
     const request = new XMLHttpRequest();
-    request.open("get", "./../data/bikesData.json");
+    request.open("get", "./../data/equipmentData.json");
     request.onload = function () {
         try {
             const json = JSON.parse(request.responseText);
@@ -11,6 +13,7 @@ function loadProducts() {
             localStorage.removeItem('sendToWishlist');
             json.push(additionalProd);
             populateProducts(json);
+
         } catch (e) {
             console.log("Could not load products");
         }

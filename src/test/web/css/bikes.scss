@@ -1,4 +1,5 @@
 @import "defaultValues";
+@import "products-Template";
 
 .bikes-container {
     display: grid;
@@ -29,7 +30,7 @@ h2 {
     padding: 5px 40% 5px 0;
     justify-self: end;
 
-    .by-category, .by-frame-size, .by-suspension, .by-wheel-size {
+    .by-category, .by-frame-size, .by-suspension, .by-wheel-size, .color-filter {
         color: #fc5500;
     }
 
