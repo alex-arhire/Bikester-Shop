@@ -7,6 +7,13 @@ body {
     font-family: "Open Sans Semibold";
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 #login-screen {
     background-image: url("./../img/robin-wallner,-ålesund,-norway-2016.jpg");
     background-position: center;
@@ -15,101 +22,102 @@ body {
     margin: 10% 25% 10% 25%;
     /*width: fit-content;*/
     /*height: fit-content;*/
+}
 
-    .row.top {
-        background-color: white;
-        opacity: 80%;
-        border-bottom: solid #fc5500;
-        .column {
-            float: left;
-        }
+.row.top {
+  background-color: white;
+  opacity: 80%;
+  border-bottom: solid #fc5500;
+}
 
-        .column.logo {
-            width: 25%;
-        }
+.column {
+  float: left;
+}
 
-        img {
-            width: 150px;
-            height: 120px;
-        }
+.column.logo {
+  width: 25%;
+}
 
-        .column.quote {
-            width: 75%;
-            text-align: right;
-        }
+img {
+  width: 150px;
+  height: 120px;
+}
 
-        blockquote footer{
-            text-align: right;
-            font-size: small;
-        }
-    }
+.column.quote {
+  width: 75%;
+  text-align: right;
+}
 
-    .column.login-box {
-        width: 40%;
-        height: 100%;
-        background-color: #efefef;
-        float: right;
-        opacity: 90%;
+blockquote footer {
+  text-align: right;
+  font-size: small;
+}
 
-        h2 {
-            display: block;
-            color: #fc5500;
-            margin-bottom: 30px;
-            padding: 15px;
-        }
+.column.login-box {
+  width: 40%;
+  height: 500px;
+  background-color: #efefef;
+  float: right;
+  opacity: 90%;
+}
 
-        form input, button {
-            margin: 7px auto;
-        }
+h2 {
+  display: block;
+  color: #fc5500;
+  margin-bottom: 30px;
+  padding: 15px;
+}
 
-        form label:not(#remember-label), input:not(#remember-me), button {
-            display: block;
-        }
+form input, button {
+  margin: 7px auto;
+}
 
-        input[type="email"], input[type="password"]{
-            width: 200px;
-            height: 30px;
-            border-radius: 5px;
-        }
+form label:not(#remember-label), input:not(#remember-me), button {
+  display: block;
+}
 
-        .fas.fa-eye {
-            display: inline;
-            position: absolute;
-            color: gray;
-            padding-top: 18px;
-            margin-left: 75px;
-        }
+input[type="email"], input[type="password"]{
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+}
 
-        button {
-            background-color: black;
-            font-weight: bold;
-            color: white;
-            border-radius: 5px;
-            font-size: 16px;
-            width: 200px;
-            height: 37px;
-        }
+.fas.fa-eye {
+  display: inline;
+  position: absolute;
+  color: gray;
+  padding-top: 18px;
+  margin-left: 75px;
+}
 
-        button:hover{
-            cursor: pointer;
-        }
+button {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 200px;
+  height: 37px;
+}
 
-        #new-user-link {
-            margin-top: 20px;
-            margin-bottom: 96px;
-        }
+button:hover{
+  cursor: pointer;
+}
 
-        label[for="email"]::after, label[for="password"]::after {
-            content: "*";
-            color: #fc5500;
-        }
-    }
+#new-user-link {
+  margin-top: 20px;
+  margin-bottom: 96px;
+}
 
-    .row::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+label[for="email"]::after, label[for="password"]::after {
+  content: "*";
+  color: #fc5500;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media (max-width: 1050px) {

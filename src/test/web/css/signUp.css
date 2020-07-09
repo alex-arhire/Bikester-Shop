@@ -14,61 +14,74 @@ body {
   width: fit-content;
   height: fit-content;
 }
-#login-screen .row.top {
+
+.row.top {
   background-color: white;
   opacity: 80%;
   border-bottom: solid #fc5500;
 }
-#login-screen .column {
+
+.column {
   float: left;
 }
-#login-screen .column.logo {
+
+.column.logo {
   width: 25%;
 }
-#login-screen img {
+
+img {
   width: 150px;
   height: 120px;
 }
-#login-screen .column.quote {
+
+.column.quote {
   width: 75%;
   text-align: right;
 }
-#login-screen blockquote footer {
+
+blockquote footer {
   text-align: right;
   font-size: small;
 }
-#login-screen .column.login-box {
+
+.column.login-box {
   width: 35%;
-  height: 100%;
+  height: 700px;
   background-color: #efefef;
   opacity: 90%;
   position: relative;
 }
-#login-screen .column.login-box .fas.fa-eye {
+
+.fas.fa-eye {
   position: absolute;
   color: gray;
   padding-top: 18px;
   margin-left: 75px;
 }
-#login-screen .column.login-box h2 {
+
+h2 {
   display: block;
   color: #fc5500;
   margin-bottom: 30px;
   padding: 15px;
 }
-#login-screen .column.login-box form input, #login-screen .column.login-box button {
+
+form input, button {
   margin: 7px auto;
 }
-#login-screen .column.login-box form label, #login-screen .column.login-box input {
+
+form label, input {
   display: block;
 }
-#login-screen .column.login-box input[type=email], #login-screen .column.login-box input[type=password], #login-screen .column.login-box input[type=text] {
+
+input[type=email], input[type=password], input[type=text] {
   width: 200px;
   height: 30px;
   border-radius: 5px;
   /*border: 1px solid red;*/
 }
-#login-screen .column.login-box button {
+
+button {
   background-color: black;
   font-weight: bold;
   color: white;
@@ -77,18 +90,22 @@ body {
   width: 200px;
   height: 37px;
 }
-#login-screen .column.login-box button:hover {
+
+button:hover {
   cursor: pointer;
 }
-#login-screen .column.login-box #new-user-link {
+
+#new-user-link {
   margin-top: 20px;
   margin-bottom: 96px;
 }
-#login-screen .column.login-box label[for=firstname]::after, #login-screen .column.login-box label[for=lastname]::after, #login-screen .column.login-box label[for=email]::after, #login-screen .column.login-box label[for=password]::after {
+
+label[for=firstname]::after, label[for=lastname]::after, label[for=email]::after, label[for=password]::after {
   content: "*";
   color: #fc5500;
 }
-#login-screen .row::after {
+
+.row::after {
   content: "";
   display: table;
   clear: both;

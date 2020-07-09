@@ -13,102 +13,103 @@ body {
     margin: 5% 20% 5% 20%;
     width: fit-content;
     height: fit-content;
+}
 
-    .row.top {
-        background-color: white;
-        opacity: 80%;
-        border-bottom: solid #fc5500;
-    }
+.row.top {
+  background-color: white;
+  opacity: 80%;
+  border-bottom: solid #fc5500;
+}
 
-    .column {
-        float: left;
-    }
+.column {
+  float: left;
+}
 
-    .column.logo {
-        width: 25%;
-    }
+.column.logo {
+  width: 25%;
+}
 
-    img {
-        width: 150px;
-        height: 120px;
-    }
+img {
+  width: 150px;
+  height: 120px;
+}
 
-    .column.quote {
-        width: 75%;
-        text-align: right;
-    }
+.column.quote {
+  width: 75%;
+  text-align: right;
+}
 
-    blockquote footer{
-        text-align: right;
-        font-size: small;
-    }
+blockquote footer{
+  text-align: right;
+  font-size: small;
+}
 
-    .column.login-box {
-        width: 35%;
-        height: 100%;
-        background-color: #efefef;
-        opacity: 90%;
-        position: relative;
+.column.login-box {
+  width: 35%;
+  height: 700px;
+  background-color: #efefef;
+  opacity: 90%;
+  position: relative;
+}
 
-        .fas.fa-eye {
-            position: absolute;
-            color: gray;
-            padding-top: 18px;
-            margin-left: 75px;
-        }
 
-        h2 {
-            display: block;
-            color: #fc5500;
-            margin-bottom: 30px;
-            padding: 15px;
-        }
+.fas.fa-eye {
+  position: absolute;
+  color: gray;
+  padding-top: 18px;
+  margin-left: 75px;
+}
 
-        form input, button {
-            margin: 7px auto;
-        }
+h2 {
+  display: block;
+  color: #fc5500;
+  margin-bottom: 30px;
+  padding: 15px;
+}
 
-        form label, input {
-            display: block;
-        }
+form input, button {
+  margin: 7px auto;
+}
 
-        input[type="email"], input[type="password"], input[type="text"]{
-            width: 200px;
-            height: 30px;
-            border-radius: 5px;
-            /*border: 1px solid red;*/
-        }
+form label, input {
+  display: block;
+}
 
-        button {
-            background-color: black;
-            font-weight: bold;
-            color: white;
-            border-radius: 5px;
-            font-size: 16px;
-            width: 200px;
-            height: 37px;
-        }
+input[type="email"], input[type="password"], input[type="text"]{
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  /*border: 1px solid red;*/
+}
 
-        button:hover{
-            cursor: pointer;
-        }
+button {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 200px;
+  height: 37px;
+}
 
-        #new-user-link {
-            margin-top: 20px;
-            margin-bottom: 96px;
-        }
+button:hover{
+  cursor: pointer;
+}
 
-        label[for="firstname"]::after, label[for="lastname"]::after, label[for="email"]::after, label[for="password"]::after  {
-            content: "*";
-            color: #fc5500;
-        }
-    }
+#new-user-link {
+  margin-top: 20px;
+  margin-bottom: 96px;
+}
 
-    .row::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+label[for="firstname"]::after, label[for="lastname"]::after, label[for="email"]::after, label[for="password"]::after  {
+  content: "*";
+  color: #fc5500;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media (max-width: 1050px) {

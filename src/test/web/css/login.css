@@ -6,6 +6,13 @@ body {
   font-family: "Open Sans Semibold";
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 #login-screen {
   background-image: url("./../img/robin-wallner,-ålesund,-norway-2016.jpg");
   background-position: center;
@@ -15,61 +22,74 @@ body {
   /*width: fit-content;*/
   /*height: fit-content;*/
 }
-#login-screen .row.top {
+
+.row.top {
   background-color: white;
   opacity: 80%;
   border-bottom: solid #fc5500;
 }
-#login-screen .row.top .column {
+
+.column {
   float: left;
 }
-#login-screen .row.top .column.logo {
+
+.column.logo {
   width: 25%;
 }
-#login-screen .row.top img {
+
+img {
   width: 150px;
   height: 120px;
 }
-#login-screen .row.top .column.quote {
+
+.column.quote {
   width: 75%;
   text-align: right;
 }
-#login-screen .row.top blockquote footer {
+
+blockquote footer {
   text-align: right;
   font-size: small;
 }
-#login-screen .column.login-box {
+
+.column.login-box {
   width: 40%;
-  height: 100%;
+  height: 500px;
   background-color: #efefef;
   float: right;
   opacity: 90%;
 }
-#login-screen .column.login-box h2 {
+
+h2 {
   display: block;
   color: #fc5500;
   margin-bottom: 30px;
   padding: 15px;
 }
-#login-screen .column.login-box form input, #login-screen .column.login-box button {
+
+form input, button {
   margin: 7px auto;
 }
-#login-screen .column.login-box form label:not(#remember-label), #login-screen .column.login-box input:not(#remember-me), #login-screen .column.login-box button {
+
+form label:not(#remember-label), input:not(#remember-me), button {
   display: block;
 }
-#login-screen .column.login-box input[type=email], #login-screen .column.login-box input[type=password] {
+
+input[type=email], input[type=password] {
   width: 200px;
   height: 30px;
   border-radius: 5px;
 }
-#login-screen .column.login-box .fas.fa-eye {
+
+.fas.fa-eye {
   display: inline;
   position: absolute;
   color: gray;
   padding-top: 18px;
   margin-left: 75px;
 }
-#login-screen .column.login-box button {
+
+button {
   background-color: black;
   font-weight: bold;
   color: white;
@@ -78,18 +98,22 @@ body {
   width: 200px;
   height: 37px;
 }
-#login-screen .column.login-box button:hover {
+
+button:hover {
   cursor: pointer;
 }
-#login-screen .column.login-box #new-user-link {
+
+#new-user-link {
   margin-top: 20px;
   margin-bottom: 96px;
 }
-#login-screen .column.login-box label[for=email]::after, #login-screen .column.login-box label[for=password]::after {
+
+label[for=email]::after, label[for=password]::after {
   content: "*";
   color: #fc5500;
 }
-#login-screen .row::after {
+
+.row::after {
   content: "";
   display: table;
   clear: both;

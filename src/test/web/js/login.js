@@ -8,37 +8,37 @@ var passwordRegEx = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{10}/g;
 var message = document.createElement('p');
 
 window.onload = function() {
-    document.querySelectorAll('login-form input').value = '';
+    form.reset();
 };
+
+function validate(info, msgColor, btnDisabled) {
+    message.innerHTML = info;
+    message.style.color = msgColor;
+    inputDiv.appendChild(message);
+    if (btnDisabled === true) {
+        submitButton.setAttribute('disabled', 'true');
+    } else if (btnDisabled === null){
+        submitButton.removeAttribute('disabled');
+    }
+}
 
 function validateEmail() {
     if (email.value.match(emailRegEx)) {
-        message.innerHTML = '<span class="iconify" data-icon="ant-design:check-circle-outlined" data-inline="false" style="color: green;"></span> Email validated';
-        message.style.color = 'green';
-        submitButton.removeAttribute('disabled');
+        validate('<span class="iconify" data-icon="ant-design:check-circle-outlined" data-inline="false" style="color: green;"></span> Email validated', 'green', null);
     } else {
-        message.innerHTML = '<span class="iconify" data-icon="clarity:remove-line" data-inline="false" style="color: red;"></span> Invalid email address';
-        message.style.color = 'red';
-        submitButton.setAttribute('disabled', 'true');
+        validate('<span class="iconify" data-icon="clarity:remove-line" data-inline="false" style="color: red;"></span> Invalid email address', 'red', true);
     }
-    inputDiv.appendChild(message);
 }
 
 email.addEventListener('keyup', validateEmail);
 
 function validatePassword() {
     if (password.value.match(passwordRegEx)) {
-        message.innerHTML = '<span class="iconify" data-icon="ant-design:check-circle-outlined" data-inline="false" style="color: green;"></span> Password validated';
-        message.style.color = 'green';
-        submitButton.removeAttribute('disabled');
+        validate(`<span class="iconify" data-icon="ant-design:check-circle-outlined" data-inline="false" style="color: green;"></span> Password validated`, 'green', null);
         submitButton.style.backgroundColor = '#fc5500';
     } else {
-        message.innerHTML =
-            "<span class=\"iconify\" data-icon=\"clarity:remove-line\" data-inline=\"false\" style=\"color: red;\"></span> Password should be at least 10 characters long, contain one uppercase, one lowercase and one digit";
-        message.style.color = 'red';
-        submitButton.setAttribute('disabled', 'true');
+        validate( `<span class=\"iconify\" data-icon=\"clarity:remove-line\" data-inline=\"false\" style=\"color: red;\"></span> Password should be at least 10 characters long, contain one uppercase, one lowercase and one digit`, 'red', true);
     }
-    inputDiv.appendChild(message);
 }
 
 password.addEventListener('keyup', validatePassword);
