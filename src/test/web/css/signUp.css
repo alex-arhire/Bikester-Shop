@@ -1,0 +1,106 @@
+body {
+  background-color: rgba(0, 0, 0, 0.33);
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Open Sans Semibold";
+}
+
+#login-screen {
+  background-image: url("./../img/e21bd555d78e25253c11d533d3aa7304copy2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5% 20% 5% 20%;
+  width: fit-content;
+  height: fit-content;
+}
+#login-screen .row.top {
+  background-color: white;
+  opacity: 80%;
+  border-bottom: solid #fc5500;
+}
+#login-screen .column {
+  float: left;
+}
+#login-screen .column.logo {
+  width: 25%;
+}
+#login-screen img {
+  width: 150px;
+  height: 120px;
+}
+#login-screen .column.quote {
+  width: 75%;
+  text-align: right;
+}
+#login-screen blockquote footer {
+  text-align: right;
+  font-size: small;
+}
+#login-screen .column.login-box {
+  width: 35%;
+  height: 100%;
+  background-color: #efefef;
+  opacity: 90%;
+  position: relative;
+}
+#login-screen .column.login-box .fas.fa-eye {
+  position: absolute;
+  color: gray;
+  padding-top: 18px;
+  margin-left: 75px;
+}
+#login-screen .column.login-box h2 {
+  display: block;
+  color: #fc5500;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+#login-screen .column.login-box form input, #login-screen .column.login-box button {
+  margin: 7px auto;
+}
+#login-screen .column.login-box form label, #login-screen .column.login-box input {
+  display: block;
+}
+#login-screen .column.login-box input[type=email], #login-screen .column.login-box input[type=password], #login-screen .column.login-box input[type=text] {
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  /*border: 1px solid red;*/
+}
+#login-screen .column.login-box button {
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 200px;
+  height: 37px;
+}
+#login-screen .column.login-box button:hover {
+  cursor: pointer;
+}
+#login-screen .column.login-box #new-user-link {
+  margin-top: 20px;
+  margin-bottom: 96px;
+}
+#login-screen .column.login-box label[for=firstname]::after, #login-screen .column.login-box label[for=lastname]::after, #login-screen .column.login-box label[for=email]::after, #login-screen .column.login-box label[for=password]::after {
+  content: "*";
+  color: #fc5500;
+}
+#login-screen .row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 1050px) {
+  #login-screen, .column.logo, .column.quote, .column.login-box {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=signUp.css.map */
