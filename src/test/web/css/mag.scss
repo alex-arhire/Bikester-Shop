@@ -1,3 +1,9 @@
+@import "commonStyle";
+
+button {
+    @include buttonStyle($buttonBGBlack, $textColorWS);
+}
+
 .mag-container {
     display: grid;
     grid-template-rows: repeat(4, 1fr);

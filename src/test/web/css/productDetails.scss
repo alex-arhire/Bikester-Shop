@@ -1,5 +1,9 @@
 @import "commonStyle";
 
+button {
+    @include buttonStyle($buttonBGBlack, $textColorWS);
+}
+
 .prod-details-container {
     display: grid;
     grid-template-columns: 20% 40% 40%;

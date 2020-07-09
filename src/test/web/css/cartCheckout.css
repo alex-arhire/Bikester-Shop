@@ -27,6 +27,14 @@ ul li, a {
   color: whitesmoke;
 }
 
+/*Common input styles*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 .main-container {
   display: grid;
   grid-template-columns: 35% 35% 30%;

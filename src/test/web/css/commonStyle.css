@@ -27,4 +27,12 @@ ul li, a {
   color: whitesmoke;
 }
 
+/*Common input styles*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 /*# sourceMappingURL=commonStyle.css.map */

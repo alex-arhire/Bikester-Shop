@@ -1,9 +1,15 @@
+@import "commonStyle";
+
 .contact-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 5% 20%;
   color: whitesmoke;
   background: url(./../img/AlanStockPhotography-cycling-forest-godrays-sun-rays-mountain-biking-wales.jpg);
+}
+
+button {
+  @include buttonStyle($buttonBGBlack, $textColorWS);
 }
 
 .contact-form {

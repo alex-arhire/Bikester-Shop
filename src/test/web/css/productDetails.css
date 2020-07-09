@@ -27,6 +27,27 @@ ul li, a {
   color: whitesmoke;
 }
 
+/*Common input styles*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+button {
+  background-color: black;
+  color: whitesmoke;
+  border: none;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #fc5500;
+}
+
 .prod-details-container {
   display: grid;
   grid-template-columns: 20% 40% 40%;

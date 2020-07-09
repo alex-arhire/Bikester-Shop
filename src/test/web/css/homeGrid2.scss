@@ -21,6 +21,10 @@
   "mag2-text mag2-text mag2-text mag2-img mag2-img mag2-img"
 }
 
+button {
+  @include buttonStyle($buttonBGBlack, $textColorWS);
+}
+
 .card {
   background-color: white;
   transition: all 0.5s ease-in-out 0s;
