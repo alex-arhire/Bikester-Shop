@@ -1,8 +1,17 @@
+/*The purpose of this function is to get the data from the JSON files and display it on the respective page
+(Bikes, Equipment and Components pages)*/
+
 const products = document.querySelector('.products-template');
 
 function loadProducts() {
     const request = new XMLHttpRequest();
-    request.open("get", "./../data/bikesData.json");
+    if (window.location.href === 'http://localhost:8080/bikes.html') {
+        request.open("get", "./../data/bikesData.json");
+    } else if (window.location.href === 'http://localhost:8080/equipment.html') {
+        request.open("get", "./../data/equipmentData.json");
+    } else if (window.location.href === 'http://localhost:8080/components.html') {
+        request.open("get", "./../data/componentsData.json");
+    }
     request.onload = function () {
         try {
             const json = JSON.parse(request.responseText);
@@ -51,9 +60,7 @@ function populateProducts(json) {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    loadProducts();
-});
+document.addEventListener("DOMContentLoaded", loadProducts);
 
 
 
