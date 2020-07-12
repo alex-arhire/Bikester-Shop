@@ -33,11 +33,19 @@ function validateEmail() {
 email.addEventListener('keyup', validateEmail);
 
 function validatePassword() {
-    if (password.value.match(passwordRegEx)) {
-        validate(`<span class="iconify" data-icon="ant-design:check-circle-outlined" data-inline="false" style="color: green;"></span> Password validated`, 'green', null);
-        submitButton.style.backgroundColor = '#fc5500';
+    if (window.location.href === "http://localhost:8080/login.html") {
+        if (password.value.match(passwordRegEx)) {
+            validate(`<span class="iconify" data-icon="ant-design:check-circle-outlined" data-inline="false" style="color: green;"></span> Password validated`, 'green', null);
+            submitButton.style.backgroundColor = '#fc5500';
+        } else {
+            validate( `<span class=\"iconify\" data-icon=\"clarity:remove-line\" data-inline=\"false\" style=\"color: red;\"></span> Password should be at least 10 characters long, contain one uppercase, one lowercase and one digit`, 'red', true);
+        }
     } else {
-        validate( `<span class=\"iconify\" data-icon=\"clarity:remove-line\" data-inline=\"false\" style=\"color: red;\"></span> Password should be at least 10 characters long, contain one uppercase, one lowercase and one digit`, 'red', true);
+        if (password.value.match(passwordRegEx)) {
+            validate(`<span class="iconify" data-icon="ant-design:check-circle-outlined" data-inline="false" style="color: green;"></span> Password validated`, 'green', null);
+        } else {
+            validate( `<span class=\"iconify\" data-icon=\"clarity:remove-line\" data-inline=\"false\" style=\"color: red;\"></span> Password should be at least 10 characters long, contain one uppercase, one lowercase and one digit`, 'red', true);
+        }
     }
 }
 
