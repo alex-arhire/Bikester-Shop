@@ -10,8 +10,9 @@ function loadProducts() {
 
     } else if (window.location.href === "http://localhost:8080/cartCheckout.html") {
         storage = JSON.parse(localStorage.getItem('prodForCart'));
+    } else if (window.location.href === "http://localhost:8080/productDetails.html") {
+
     }
-    console.log(storage);
     storage.forEach(item => {
        console.log(item);
         var tr = document.createElement('tr');

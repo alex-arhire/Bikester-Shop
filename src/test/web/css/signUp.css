@@ -57,6 +57,7 @@ blockquote footer {
   color: gray;
   padding-top: 18px;
   margin-left: 75px;
+  cursor: pointer;
 }
 
 h2 {

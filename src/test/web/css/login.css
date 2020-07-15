@@ -75,7 +75,7 @@ form label:not(#remember-label), input:not(#remember-me), button {
   display: block;
 }
 
-input[type=email], input[type=password] {
+input[type=email], input[type=password], input[type=text] {
   width: 200px;
   height: 30px;
   border-radius: 5px;
@@ -87,6 +87,7 @@ input[type=email], input[type=password] {
   color: gray;
   padding-top: 18px;
   margin-left: 75px;
+  cursor: pointer;
 }
 
 button {

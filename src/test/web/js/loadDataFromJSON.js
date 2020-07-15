@@ -15,6 +15,7 @@ function loadProducts() {
     request.onload = function () {
         try {
             const json = JSON.parse(request.responseText);
+            localStorage.setItem('productsForStorage', JSON.stringify(json));
             populateProducts(json);
         } catch (e) {
             console.log("Could not load products");
@@ -23,14 +24,30 @@ function loadProducts() {
     request.send();
 }
 
+// function storeJSONData(json) {
+//     const PRODUCTS = [];
+//     json.forEach(item => {
+//         item = {
+//             id: item.id,
+//             img: item.img,
+//             title: item["prod-name"],
+//             price: item.price,
+//         };
+//         PRODUCTS.push(item);
+//     });
+//     localStorage.setItem('productsForStorage', JSON.stringify(PRODUCTS));
+// }
+
 function populateProducts(json) {
 //Populate with data
+//     console.log(json);
     for (var i = 0; i < json.length; i++) {
         var object = json[i];
 
         for (var j in object) {
             var div = document.createElement('div');
             div.className = 'tile';
+            div.id = object.id;
 
             var img = document.createElement('img');
             img.src = object.img;

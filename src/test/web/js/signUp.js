@@ -34,4 +34,3 @@ function validatePasswordMatch() {
 }
 
 confirmPass.addEventListener("keyup", validatePasswordMatch);
-
