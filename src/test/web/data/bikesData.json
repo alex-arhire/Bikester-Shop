@@ -36,8 +36,10 @@
       26,
       27.5,
       29
-    ]
+    ],
+    "description": "Master technical XC terrain with speed, efficiency and control. This 29er with the latest Maestro suspension technology is perfect for XC racing, marathons or epic days on the trail."
   },
+
   {
     "id": 3,
     "img": "./../img/productPage_Bikes/MY20ReignADPRO290_ColorA.jpg",
@@ -55,7 +57,8 @@
       26,
       27.5,
       29
-    ]
+    ],
+    "description": "Master technical XC terrain with speed, efficiency and control. This 29er with the latest Maestro suspension technology is perfect for XC racing, marathons or epic days on the trail."
   },
   {
     "id": 4,
@@ -74,7 +77,8 @@
       26,
       27.5,
       29
-    ]
+    ],
+    "description": "Master technical XC terrain with speed, efficiency and control. This 29er with the latest Maestro suspension technology is perfect for XC racing, marathons or epic days on the trail."
   },
   {
     "id": 5,
@@ -93,7 +97,8 @@
       26,
       27.5,
       29
-    ]
+    ],
+    "description": "Master technical XC terrain with speed, efficiency and control. This 29er with the latest Maestro suspension technology is perfect for XC racing, marathons or epic days on the trail."
   },
   {
     "id": 6,
@@ -112,7 +117,8 @@
       26,
       27.5,
       29
-    ]
+    ],
+    "description": "Master technical XC terrain with speed, efficiency and control. This 29er with the latest Maestro suspension technology is perfect for XC racing, marathons or epic days on the trail."
   },
   {
     "id": 7,
@@ -131,7 +137,8 @@
       26,
       27.5,
       29
-    ]
+    ],
+    "description": "Master technical XC terrain with speed, efficiency and control. This 29er with the latest Maestro suspension technology is perfect for XC racing, marathons or epic days on the trail."
   },
   {
     "id": 8,
@@ -150,7 +157,8 @@
       26,
       27.5,
       29
-    ]
+    ],
+    "description": "Master technical XC terrain with speed, efficiency and control. This 29er with the latest Maestro suspension technology is perfect for XC racing, marathons or epic days on the trail."
   },
   {
     "id": 9,
@@ -169,6 +177,7 @@
       26,
       27.5,
       29
-    ]
+    ],
+    "description": "Master technical XC terrain with speed, efficiency and control. This 29er with the latest Maestro suspension technology is perfect for XC racing, marathons or epic days on the trail."
   }
 ]
