@@ -11,7 +11,7 @@
       "medium",
       "large"
     ],
-    "suspension": "full suspension",
+    "suspension": "full-suspension",
     "wheel-size": [
       26,
       27.5,
@@ -25,13 +25,13 @@
     "prod-name": "Reign",
     "price": "$2,300.00",
     "stock": "In Stock",
-    "category": "trail",
+    "category": "downhill",
     "frame-size": [
       "small",
       "medium",
       "large"
     ],
-    "suspension": "full suspension",
+    "suspension": "full-suspension",
     "wheel-size": [
       26,
       27.5,
@@ -46,13 +46,13 @@
     "prod-name": "Reign Advanced Pro 29",
     "price": "$1,700.00",
     "stock": "In Stock",
-    "category": "trail",
+    "category": "enduro",
     "frame-size": [
       "small",
       "medium",
       "large"
     ],
-    "suspension": "full suspension",
+    "suspension": "full-suspension",
     "wheel-size": [
       26,
       27.5,
@@ -66,13 +66,13 @@
     "prod-name": "Reign SX",
     "price": "$4,700.00",
     "stock": "In Stock",
-    "category": "trail",
+    "category": "downhill",
     "frame-size": [
       "small",
       "medium",
       "large"
     ],
-    "suspension": "full suspension",
+    "suspension": "full-suspension",
     "wheel-size": [
       26,
       27.5,
@@ -92,7 +92,7 @@
       "medium",
       "large"
     ],
-    "suspension": "full suspension",
+    "suspension": "full-suspension",
     "wheel-size": [
       26,
       27.5,
@@ -132,7 +132,7 @@
       "medium",
       "large"
     ],
-    "suspension": "full suspension",
+    "suspension": "full-suspension",
     "wheel-size": [
       26,
       27.5,
@@ -152,7 +152,7 @@
       "medium",
       "large"
     ],
-    "suspension": "full suspension",
+    "suspension": "full-suspension",
     "wheel-size": [
       26,
       27.5,

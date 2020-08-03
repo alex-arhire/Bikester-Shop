@@ -57,7 +57,6 @@
 
 })();
 
-
 // const wishlistBtn = document.querySelectorAll('.wihslist');
 // const cartBtn = document.querySelectorAll('.cart');
 // const productTable = document.querySelector('.prod-table');
